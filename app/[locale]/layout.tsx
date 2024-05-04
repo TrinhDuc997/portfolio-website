@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import 'animate.css';
 import "./globals.css";
 import {NextIntlClientProvider, useMessages} from 'next-intl';
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -32,6 +32,7 @@ export default function LocaleLayout({
           {children}
         </NextIntlClientProvider>
       </body>
+      <GoogleAnalytics gaId="G-2ZCZ2RG6W8"/>
     </html>
   );
 }
