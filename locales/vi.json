@@ -1,0 +1,46 @@
+{
+    "Index":{
+        "home":"Trang chủ",
+        "aboutMe":"Về tôi",
+        "workExperience":"Kinh nghiệm",
+        "projects":"Dự án",
+        "contactMe":"Liên hệ",
+        "mySkills":"Kỹ năng của tôi",
+        "welcome":"Xin chào tôi là",
+        "name":"Trịnh Xuân Đức",
+        "downloadCV":"Tải xuống CV",
+        "downloadCVDescrip":"Có thể thay đổi ngôn ngữ để tải xuống CV theo ngôn ngữ đó",
+        "welcomeOnboard":"Chào mừng bạn! Tôi rất vui mừng khi có bạn ở đây. Đây là website nơi tôi thể hiện đam mê của mình với phát triển phần mềm và chia sẻ cái nhìn sâu sắc vào những giải pháp mà tôi xây dựng. Hãy tham quan để khám phá thêm về những gì tôi cung cấp và cách chúng ta có thể hợp tác.",
+        "aboutMeDescription":"Xin chào! Tôi là Đức, một kỹ sư phần mềm đam mê lập trình. Tôi bắt đầu sự nghiệp của mình từ năm thứ ba đại học và đã tích lũy được hơn 4 năm kinh nghiệm làm Front-End Developer. Ngoài ra, tôi cũng có kiến thức về thiết kế UX/UI. Đối với tôi, việc chia sẻ kiến thức là rất quan trọng. Tôi không ngần ngại đối mặt với những vấn đề phức tạp và thách thức trong công việc và có thể làm việc dưới áp lực cao. Hơn nữa, tôi luôn sẵn lòng học các ngôn ngữ lập trình hoặc công nghệ mới nếu công việc đòi hỏi.",
+        "javascriptDescription":"Với 4 năm trải nghiệm trong việc xây dựng và phát triển các ứng dụng web sử dụng JavaScript, tôi đã nắm được các khái niệm cốt lõi cũng như các kỹ thuật lập trình của ngôn ngữ này.",
+        "reactDescription":"Bên cạnh việc sử dụng React trong môi trường front-end, tôi cũng có kinh nghiệm làm việc với các thư viện và công cụ liên quan như Redux, React Router, các thư viện UI và các công cụ quản lý package như npm, yarn... hiểu và tối ưu được hiệu năng của react qua kiểm soát việc render component.",
+        "typescriptDescription":"Qua quá trình nghiên cứu và phát triển các ứng dụng sử dụng TypeScript, tôi đã trải nghiệm được lợi ích của việc viết mã rõ ràng, dễ bảo trì và gỡ lỗi hơn so với JavaScript thuần túy, đồng thời cũng gặp phải một số thách thức khi làm việc với TypeScript.",
+        "mongodbDescription":"Với MongoDB tôi đã tự học và áp dụng MongoDB vào các dự án cá nhân của mình, giúp tôi hiểu hơn về cách hoạt động của cơ sở dữ liệu NoSQL.",
+        "figmaDescription":"Trong năm vừa qua, tôi đã nâng cao kiến thức và kỹ năng của mình về thiết kế UI/UX bằng cách hoàn thành khóa học 'Web & Mobile Designer: UI/UX, Figma, +more' trên Udemy, giúp tôi hiểu sâu hơn về các nguyên tắc và quy trình thiết kế giao diện người dùng hiệu quả.",
+        "workExperienceTitle1":"Front-end Developer tại ISOL company",
+        "workExperienceTitle2":"Dev Freelancer",
+        "workExperienceTitle3":"Front-end Developer tại NTI company",
+
+        "workExperienceSubTitle1":"Tháng 8 năm 2019 - Tháng 6 năm 2022",
+        "workExperienceSubTitle2":"Tháng 10 năm 2022 - Tháng 9 năm 2023",
+        "workExperienceSubTitle3":"Tháng 10 năm 2023 - Tháng 5 năm 2024",
+
+        "workExperienceDescription1":"Tôi đã có cơ hội làm việc trên một dự án ERP với nhiều module như Nhân sự, Bán hàng, Kế toán, và nhiều hơn nữa. Tôi chịu trách nhiệm làm việc trực tiếp với dự án đang tiến hành cho khách hàng. Tôi cộng tác với người thiết kế để có được yêu cầu tính năng và với Back-End Dev để giải quyết các vấn đề của dự án. Một số tính năng mà tôi đã triển khai bao gồm xuất và nhập Excel, in ấn và xuất PDF, bên cạnh đó còn có các tính năng cơ bản như thêm, chỉnh sửa, xóa và gọi API để cập nhật dữ liệu. Tham gia vào cuộc thảo luận để làm rõ dự án sẽ triển khai trên ứng dụng web. Có một số module và trang tính năng mà tôi đã tham gia, ví dụ như module Phê duyệt, trang Chi phí của module Kế toán, trang Đơn hàng mua của Khách hàng, trang Quản lý giá của module Bán hàng, v.v.",
+        "workExperienceDescription2":"Tôi đã có cơ hội làm việc trên một dự án xây dựng một ứng dụng Quản lý Công việc. Dự án sử dụng ReactJS, NodeJS và MongoDB. Ứng dụng web có các tính năng chính như: Thêm, Sửa và Xóa công việc cho ngày và Thống kê doanh thu hàng tháng. Ngoài ra, tôi cũng đã thực hiện một dự án cá nhân về việc học tiếng Anh để tìm hiểu thêm về NextJS, NodeJS và MongoDB. Ứng dụng web có các tính năng chính như: Chia từ vựng thành các khóa học và chủ đề khác nhau, Học bằng thẻ từ và trò chơi để nhớ từ vựng, Từ vựng phân cấp để dễ dàng ôn tập.",
+        "workExperienceDescription3":"Trong thời gian làm việc tại công ty tôi đã làm viêc với dự án ERP. Dự án ERP ban đầu đã được triển khai nhiều năm trước và gặp vấn đề về hiệu suất, tính năng và bảo mật. Nhiệm vụ chính của tôi là phân tích hệ thống hiện tại, xác định các điểm yếu và lỗ hổng, sau đó đề xuất và thực hiện các giải pháp nâng cấp phù hợp. bên cạnh đó cũng xây dựng các chức năng mới và chia sẽ kiến thức bản thân giúp team cải thiện hiệu xuất trong công việc.",
+        "showMore": "Xem thêm",
+        "showLess": "Rút gọn",
+
+
+        "subTitleProject1":"Front-end developer tại ISOL company",
+        "subTitleProject2":"Dự án cá nhân",
+
+        "projectDescription1":"Dự án ERP là một giải pháp phần mềm toàn diện, tích hợp các module quan trọng để quản lý hiệu quả các hoạt động kinh doanh của doanh nghiệp. Một trong những module trọng yếu là HR (Human Resources - Nhân sự), cung cấp công cụ quản lý nhân sự, Module Matrial warehouse (Kho Vật tư) giúp theo dõi và kiểm soát tồn kho vật tư, nguyên vật liệu. Finishgoods warehouse (Kho Thành phẩm) giúp theo dõi và quản lý tồn kho sản phẩm hoàn thiện, đảm bảo đáp ứng nhu cầu của khách hàng. BOM (Bill of Materials - Danh mục Vật tư) là module quan trọng, cung cấp thông tin chi tiết về các nguyên vật liệu và quy trình sản xuất, giúp doanh nghiệp tối ưu hóa việc sản xuất sản phẩm. Cuối cùng, module Sale (Bán hàng) hỗ trợ quá trình bán hàng, quản lý đơn đặt hàng.",
+        "projectDescription2":"Dự án Work follow management là dự án xây dựng công cụ để quản lý công việc được giao cho các nhân viên giúp tổ chức và theo dõi trạng thái các công việc trong ngày. giúp thống kê số tiền thu được sau mỗi công việc đã hoàn thành, chi phí nguyên vật liệu để thực hiện công việc đó. và thông kê số công và số tiền việc đã đã thu được trong tháng",
+        "projectDescription3":"Dự án Beelearning dự án về giáo dục phần mềm tạo ra công cụ hổ trợ cho việc học tiếng anh. phần mềm tập chung vào xây dựng phương pháp học từ vựng theo flashcards. Hiển thị thông tin từ vựng cần học, bao gồm từ, định nghĩa, ví dụ và hình ảnh để giúp người học ghi nhớ dễ dàng hơn. Cho phép người học lưu trữ và quản lý danh sách từ vựng đã học, ghi nhận tiến độ học từ vựng của từng người dùng. Tự động phân loại từ vựng theo các cấp độ khác nhau, ví dụ: đã học, đã nhớ, nhớ lâu. Cung cấp lịch trình ôn tập cho từng cấp độ, đảm bảo người học có thể duy trì và cải thiện khả năng nhớ từ vựng theo thời gian. phần mềm cũng cung cấp một module tạo môi trường giao tiếp bằng AI. chỉnh lỗi phát âm cho người dùng",
+        "projectDescription4":"Một dự án cá nhân giúp tôi giới thiệu về kỹ năng và các dự án cảu bản thân. Qua đó, tôi có thể tạo được ấn tượng ban đầu tốt đẹp với khách hàng và nhà tuyển dụng tiềm năng. Trong quá trình thiết kế và xây dựng website portfolio, tôi sẽ chú trọng vào các yếu tố như giao diện đẹp mắt, dễ sử dụng và tối ưu trải nghiệm người dùng. Nội dung sẽ được cập nhật liên tục, bao gồm thông tin cá nhân, các dự án đã hoàn thành, công nghệ sử dụng và những thành tích đạt được. Với website portfolio chuyên nghiệp và đầy đủ thông tin, tôi hy vọng sẽ có cơ hội thể hiện được năng lực và tạo ấn tượng tốt với các đối tác, khách hàng và nhà tuyển dụng trong tương lai. Đây sẽ là một công cụ hữu ích để giới thiệu và quảng bá bản thân tôi.",
+
+        "view":"Xem"
+
+    }
+}

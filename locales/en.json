@@ -1,0 +1,44 @@
+{
+  "Index": {
+    "home": "Home",
+    "aboutMe": "About me",
+    "workExperience": "Work experience",
+    "projects": "Projects",
+    "contactMe": "Contact me",
+    "mySkills": "My Skills",
+    "welcome": "Hi I am",
+    "name": "Trinh Xuan Duc",
+    "downloadCV": "Download CV",
+    "downloadCVDescrip": "It's possible to change the language to download the CV in that language.",
+    "welcomeOnboard": "Welcome aboard! I’m thrilled to have you here. this is the hub where I showcase my passion for software development and share insights in to the solutions I build. Take a tour to discover more about what I offer and how we can collaborate.",
+    "aboutMeDescription": "Hello! I'm Duc, a software engineer passionate about programming. I started my career path in my third year of university and have accumulated over 4 years of experience as a Front-End Developer. Additionally, I possess knowledge in UX/UI design. For me, sharing knowledge is highly important. I don't hesitate to face complex problems and challenges in my work and can work under high pressure. Moreover, I'm always ready to learn new programming languages or technology if the job requires it.",
+    "javascriptDescription": "With 4 years of experience in building and developing web applications using JavaScript, I have grasped the core concepts as well as programming techniques of this language.",
+    "reactDescription": "In addition to utilizing React in front-end environments, I also have experience working with related libraries and tools such as Redux, React Router, UI libraries, and package management tools like npm, yarn... Understanding and optimizing React performance through component rendering control is also within my expertise.",
+    "typescriptDescription": "Through researching and developing applications using TypeScript, I've experienced the benefits of writing clear, maintainable, and debuggable code compared to plain JavaScript. Additionally, I've encountered some challenges when working with TypeScript.",
+    "mongodbDescription": "With MongoDB, I've self-taught and applied it to my personal projects, enabling me to gain a deeper understanding of how NoSQL databases operate.",
+    "figmaDescription": "Over the past year, I've enhanced my knowledge and skills in UI/UX design by completing the 'Web & Mobile Designer: UI/UX, Figma, +more' course on Udemy. This helped me gain a deeper understanding of effective user interface design principles and processes.",
+    "workExperienceTitle1": "Front-end Developer at ISOL company",
+    "workExperienceTitle2": "Work As a Dev Freelancer",
+    "workExperienceTitle3": "Front-end Developer at NTI company",
+
+    "workExperienceSubTitle1": "Aug. 2019 - Jun. 2022",
+    "workExperienceSubTitle2": "Otc. 2022 - Sep. 2023",
+    "workExperienceSubTitle3": "Otc. 2023 - May 2024",
+
+    "workExperienceDescription1": "I had the opportunity to work on an ERP project with many modules such as HR, Sales, Accounting, and so on. I'm responsible for working directly with the project in progress for the client. I collaborate with the designer to get the feature requirements and Back-End Dev to resolve the project's problems. Some of the features I implemented include exporting and importing Excel, printing, and exporting pdf, besides there are basic features such as adding, editing, removing, and calling API to update data.Join the discussion to clarify what business will be deployed on the web application. There are several modules and feature pages I have been involved in, for instance, the Approval module, Expenditure page of the Accounting module, Customer Purchase Order page, Price Management page of the Sale module, etc.",
+    "workExperienceDescription2": "I had the opportunity to work on a project building a Work Management application. The project uses ReactJS, NodeJS, and MongoDB. The web application has main features such as: Add, Edit, and Remove tasks for the day and Monthly revenue statistics. Beside, I also did a personal project about learning English to learn more about NextJS, NodeJS, and MongoDB. The web application has main features such as: Divide the vocabulary into different courses and topics, Learning by flashcards and games to memorize vocabulary, Hierarchical vocabulary to review easily",
+    "workExperienceDescription3": "During my tenure at the company, I worked on an ERP project. The original ERP project had been deployed several years ago and faced issues with performance, functionality, and security. My primary responsibility was to analyze the current system, identify weaknesses and vulnerabilities, and then propose and implement appropriate upgrade solutions. Additionally, I was involved in building new functionalities and share personal knowledge to help the team improve performance at work.",
+    "showMore": "Show more",
+    "showLess": "Show less",
+
+    "subTitleProject1":"Front-end developer at ISOL company",
+    "subTitleProject2":"Personal project",
+
+    "projectDescription1":"An ERP (Enterprise Resource Planning) project is a comprehensive software solution that integrates crucial modules to effectively manage a company's business operations. One of the key modules is HR (Human Resources), which provides personnel management tools. The Material Warehouse module helps track and control inventory of raw materials and supplies. The Finished Goods Warehouse module helps monitor and manage inventory of finished products, ensuring customer demand is met. BOM (Bill of Materials) is an important module that provides detailed information about raw materials and manufacturing processes, helping companies optimize product manufacturing. Finally, the Sales module supports the sales process and manages order handling.",
+    "projectDescription2":"The Work Follow Management project is a project to build a tool for managing tasks assigned to employees, helping to organize and track the status of daily tasks. It helps to calculate the revenue earned after each completed task, as well as the material costs incurred to complete that task. Additionally, it summarizes the number of jobs and the total revenue earned within a month.",
+    "projectDescription3":"The Beelearning project is an educational software project that creates a tool to support English language learning. The software focuses on building a vocabulary learning method using flashcards. It displays vocabulary information that needs to be learned, including words, definitions, examples, and images to help learners remember more easily. It allows learners to store and manage lists of vocabulary they have learned, and track each user's vocabulary learning progress. It automatically classifies vocabulary into different levels, such as learned, remembered, and long-term memory. It provides a review schedule for each level, ensuring that learners can maintain and improve their vocabulary retention over time. The software also provides a module for creating an AI-based communication environment, and offers pronunciation correction for users.",
+    "projectDescription4":"A personal project to help me introduce my skills and projects. Through this, I can create a good initial impression with potential clients and employers. In the process of designing and building the portfolio website, I will focus on elements such as an attractive interface, user-friendliness, and optimizing the user experience. The content will be continuously updated, including personal information, completed projects, technologies used, and achievements. With a professional and informative portfolio website, I hope to have the opportunity to demonstrate my abilities and make a good impression on partners, clients, and potential employers in the future. This will be a useful tool to introduce and promote myself.",
+    
+    "view":"View"
+  }
+}
