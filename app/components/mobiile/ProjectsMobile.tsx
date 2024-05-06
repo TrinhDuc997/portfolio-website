@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard, { IProjectCard } from "./ProjectCard";
+import ProjectCard, { IProjectCard } from "./ProjectCardMobile";
 import { useTranslations } from "next-intl";
 
 interface IProjects {
@@ -46,8 +46,8 @@ export default function Projects(props: IProjects) {
     },
   ] } = props;
   return (
-    <div id="projects" className="section w-full flex flex-col items-center justify-center gap-4 p-6 box-border max-w-screen-2xl">
-      <h2 className="text-heading-h2 text-neutral-100">{t("projects")}</h2>
+    <div id="mobile-projects" className="mobile-section w-full flex flex-col items-center justify-center gap-4 p-4 box-border max-w-screen-2xl">
+      <h2 className="text-heading-h3 text-neutral-100">{t("projects")}</h2>
       <div className="w-full max-w-screen-xl overflow-x-auto flex flex-row items-start justify-start py-4 px-0 box-border gap-[16px]">
       {projectData.map((item, index) => {
         return (

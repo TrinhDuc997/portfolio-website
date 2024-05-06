@@ -1,6 +1,6 @@
 'use client'
 import React, { MouseEvent } from "react";
-import ReadMore from "./ReadMore";
+import ReadMore from "../common/ReadMore";
 
 interface ICard {
   index: number;

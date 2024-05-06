@@ -1,5 +1,5 @@
 import React from 'react'
-import DescriptionCard from './DescriptionCard';
+import DescriptionCard from './DescriptionCardMOBILE';
 import { useTranslations } from "next-intl";
 
 
@@ -31,8 +31,8 @@ export default function WorkExperience(props: IWorkExperience) {
         },
     ] } = props;
   return (
-    <div id='workexperience' className='section w-full flex flex-col items-center justify-center gap-4 p-6 box-border max-w-screen-2xl animate__animated animate__fadeIn animation-duration-2s'>
-        <h2 className='text-heading-h2 text-neutral-100'>
+    <div id='mobile-workexperience' className='mobile-section w-full flex flex-col items-center justify-center gap-4 p-4 box-border max-w-screen-2xl animate__animated animate__fadeIn animation-duration-2s'>
+        <h2 className='text-heading-h3 text-neutral-100'>
             {t("workExperience")}
         </h2>
     {

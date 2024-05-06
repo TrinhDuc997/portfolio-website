@@ -6,59 +6,44 @@ import {
   useRouter,
   type Locale,
 } from "@/i18n.config";
-import {
-  IconButton,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-} from "@chakra-ui/react";
-import { MouseEvent } from "react";
-
+import { Dropdown } from "flowbite-react";
 export default function LanguageSwitcher({ locale }: { locale: Locale }) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const changeLocale = (event: MouseEvent<HTMLButtonElement>) => {
-    const target = event.target as HTMLButtonElement;
-    const newLocale = target.value as Locale;
+  const changeLocale = (newLocale: Locale) => {
     router.replace(pathname, { locale: newLocale });
   };
 
   return (
     <div>
-      <Menu>
-        <MenuButton
-          as={IconButton}
-          aria-label="Options"
-          icon={
+      <Dropdown
+        label=""
+        renderTrigger={() => (
+          <img
+            role="button"
+            className="w-[28px] h-[28px] rounded-md p-1 hover:bg-neutral-700 cursor-pointer"
+            src={`/${localeNames[locale]}.svg`}
+          />
+        )}
+        arrowIcon={false}
+        className="bg-neutral-700 focus:bg-neutral-700 border-none p-2 rounded-2xl left-[50%]"
+        dismissOnClick={false}
+      >
+        {locales.map((loc) => (
+          <Dropdown.Item
+            onClick={() => changeLocale(loc)}
+            key={loc}
+            value={loc}
+            className="rounded-lg text-neutral-100 hover:bg-neutral-500 focus:bg-neutral-500 gap-2"
+          >
             <img
-              className="w-[24px] h-[24px] rounded-md"
-              src={`/${localeNames[locale]}.svg`}
-            />
-          }
-          variant="outline"
-          className="w-8"
-        />
-        <MenuList className="p-2 rounded-lg bg-neutral-700">
-          {locales.map((loc) => (
-            <MenuItem
-              onClick={changeLocale}
-              className="text-neutral-100"
-              key={loc}
-              value={loc}
-              icon={
-                <img
-                  className="w-[24px] h-[24px]"
-                  src={`/${localeNames[loc]}.svg`}
-                />
-              }
-            >
-              {localeNames[loc]}
-            </MenuItem>
-          ))}
-        </MenuList>
-      </Menu>
+            className="w-[24px] h-[24px] rounded-md"
+            src={`/${localeNames[loc]}.svg`}
+          />{localeNames[loc]}
+          </Dropdown.Item>
+        ))}
+      </Dropdown>
     </div>
   );
 }

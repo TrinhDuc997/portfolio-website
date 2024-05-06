@@ -1,16 +1,12 @@
 "use client";
-import {
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverContent,
-  PopoverTrigger,
-} from "@chakra-ui/react";
-import React from "react";
-import { Link, type Locale } from "@/i18n.config";
+import React, { useContext } from "react";
+import { type Locale } from "@/i18n.config";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "../common/LanguageSwitcher";
-
+import { MdMailOutline } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+import { Popover } from "flowbite-react";
+import { AppContext } from "@/app/hooks/useIntersectionObsercer";
 
 const handleScroll = (elementName = "") => {
   const element = document.querySelector(elementName) as HTMLElement;
@@ -37,12 +33,14 @@ const handleAnimationProjectCardWhenScroll = () => {
   }
 };
 export default function Heading() {
-  const t = useTranslations('Index');
+  const t = useTranslations("Index");
   const locale = useLocale() as Locale;
+  const appData = useContext(AppContext);
+  const { idElementFocus = '' } = appData;
   return (
     <div
       id="heading"
-      className="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-4 box-border top-[0] z-[99] sticky max-w-full"
+      className="section self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-4 box-border top-[0] z-[99] sticky max-w-full"
     >
       <div className="flex-1 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-neutral-900 flex flex-row items-start justify-center py-0 px-6 box-border max-w-full">
         <header className="flex-1 flex flex-row items-start justify-between max-w-screen-2xl gap-[20px] text-left text-29xl text-neutral-500 font-heading-h4">
@@ -57,72 +55,61 @@ export default function Heading() {
           <div className="flex flex-row items-center justify-center py-8 px-0 box-border gap-8 lg:gap-12 max-w-full text-base">
             <b
               onClick={() => handleScroll("#heading")}
-              className="relative leading-[125%] inline-block text-neutral-white cursor-pointer hover:text-neutral-300"
+              className={`text-label-16px-bold cursor-pointer hover:text-neutral-300 ${idElementFocus === "session" && "text-neutral-white"}`}
             >
               {t("home")}
             </b>
             <b
               onClick={() => handleScroll("#aboutme")}
-              className="relative leading-[125%] inline-block whitespace-nowrap cursor-pointer hover:text-neutral-300"
+              className={`text-label-16px-bold cursor-pointer hover:text-neutral-300 ${idElementFocus === "aboutme" && "text-neutral-white"}`}
             >
               {t("aboutMe")}
             </b>
 
             <b
               onClick={() => handleScroll("#workexperience")}
-              className="relative leading-[125%] whitespace-nowrap cursor-pointer hover:text-neutral-300"
+              className={`text-label-16px-bold cursor-pointer hover:text-neutral-300 ${idElementFocus === "workexperience" && "text-neutral-white"}`}
             >
               {t("workExperience")}
             </b>
             <b
               onClick={() => handleScroll("#projects")}
-              className="relative leading-[125%] inline-block cursor-pointer hover:text-neutral-300"
+              className={`text-label-16px-bold cursor-pointer hover:text-neutral-300 ${idElementFocus === "projects" && "text-neutral-white"}`}
             >
               {t("projects")}
             </b>
 
-            <Popover placement="bottom">
-              <PopoverTrigger>
-                <button className="cursor-pointer [border:none] py-2 px-4 bg-primary rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-opacity-85">
-                  <div className="relative text-label-16px-regular text-neutral-100 text-left inline-block">
-                    {t("contactMe")}
-                  </div>
-                </button>
-              </PopoverTrigger>
-              <PopoverContent className="bg-neutral-700 p-2 rounded-lg">
-                <PopoverArrow bg="#404040" />
-                <PopoverBody className="text-neutral-100">
-                  <div className="flex flex-col items-start justify-start gap-2 max-w-full">
-                    <div className="flex flex-row items-start justify-start gap-[8px]">
-                      <img
-                        className="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
-                        alt=""
-                        src="/icoutlineemail.svg"
-                      />
-                      <div className="flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
-                        <b className="relative leading-[125%] whitespace-nowrap">
-                          trinhxuanduc997@gmail.com
-                        </b>
-                      </div>
-                    </div>
-                    <div className="flex flex-row items-start justify-start gap-[8px]">
-                      <img
-                        className="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
-                        alt=""
-                        src="/telephonefill.svg"
-                      />
-                      <div className="flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
-                        <b className="relative leading-[125%] inline-block min-w-[119px] whitespace-nowrap">
-                          +84967 084 484
-                        </b>
-                      </div>
+            <Popover
+              aria-labelledby="default-popover"
+              className="bg-neutral-700 rounded-2xl"
+              theme={{
+                arrow:{
+                  base:"absolute h-2 w-2 z-0 rotate-45 mix-blend-lighten bg-neutral-700"
+                }
+              }}
+              content={
+                <div className="w-64 text-sm text-neutral-100 bg-neutral-700 border-none">
+                  <div className="px-3 py-2">
+                    <div className="flex flex-col gap-2">
+                        <div className="flex flex-row gap-2">
+                          <MdMailOutline size={24}/> trinhxuanduc997@gmail.com
+                        </div>
+                        <div className="flex flex-row gap-2">
+                          <FiPhone size={24}/> +84967 084 484
+                        </div>
                     </div>
                   </div>
-                </PopoverBody>
-              </PopoverContent>
+                </div>
+              }
+            >
+              <button
+                tabIndex={0}
+                className="py-2 px-4 rounded-lg bg-primary text-label-16px-regular text-neutral-100 hover:opacity-85"
+              >
+                {t("contactMe")}
+              </button>
             </Popover>
-
-            <LanguageSwitcher locale={locale}/>
+            <LanguageSwitcher locale={locale} />
           </div>
         </header>
       </div>
