@@ -1,6 +1,7 @@
 import React from "react";
-import ProjectCard, { IProjectCard } from "./ProjectCardMobile";
+import ProjectCard from "./ProjectCardMobile";
 import { useTranslations } from "next-intl";
+import { IProjectCard } from "../desktop/ProjectCard";
 
 interface IProjects {
   projectData?: Array<IProjectCard>;
@@ -11,6 +12,7 @@ export default function Projects(props: IProjects) {
 
   const { projectData = [
     {
+        id:1,
         projectName:"ERP",
         imageURL:"/erp.png",
         subTitle:t("subTitleProject1"),
@@ -18,6 +20,7 @@ export default function Projects(props: IProjects) {
         technologiesUsed:[{value:"React", label:"React"},{value:"Redux", label:"Redux"},{value:"Bootstrap", label:"Bootstrap"}],
     },
     {
+        id:2,
         projectName:"Work follow management",
         imageURL:"/workfollowmanagement.png",
         subTitle:t("subTitleProject2"),
@@ -27,6 +30,7 @@ export default function Projects(props: IProjects) {
         technologiesUsed:[{value:"React", label:"React"},{value:"MaterialUI", label:"MaterialUI"},{value:"Hooks", label:"Hooks"},{value:"Node.js", label:"Node.js"},{value:"Socket.io", label:"Socket.io"},{value:"MongoDB", label:"MongoDB"}],
     },
     {
+        id:3,
         projectName:"Beelearning",
         imageURL:"/beelearning.png",
         subTitle:t("subTitleProject2"),
@@ -36,6 +40,7 @@ export default function Projects(props: IProjects) {
         technologiesUsed:[{value:"Next.js", label:"Next.js"},{value:"MaterialUI", label:"MaterialUI"},{value:"Hooks", label:"Hooks"},{value:"Node.js", label:"Node.js"},{value:"Typescript", label:"Typescript"},{value:"MongoDB", label:"MongoDB"}],
     },
     {
+        id:4,
         projectName:"Personal website",
         imageURL:"/personallandingpage.png",
         subTitle:t("subTitleProject2"),
@@ -54,6 +59,7 @@ export default function Projects(props: IProjects) {
           <ProjectCard
             key={index}
             index={index}
+            id={item.id}
             projectName={item.projectName}
             imageURL={item.imageURL}
             subTitle={item.subTitle}

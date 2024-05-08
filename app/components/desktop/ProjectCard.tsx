@@ -1,40 +1,38 @@
-"use client"
-
 import React from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import ReadMore from "../common/ReadMore";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Locale } from "@/i18n.config";
 
-interface technologyUsed {
+export interface technologyUsed {
   value: string;
   label: string;
 }
 export interface IProjectCard {
   index?: number;
-  imageURL: string;
-  projectName: string;
-  subTitle: string;
-  description: string;
+  id: number,
+  imageURL?: string;
+  projectName?: string;
+  subTitle?: string;
+  subTitleProject?: string;
+  description?: string;
+  roleInProject?: string, 
   technologiesUsed: Array<technologyUsed>;
   githubURL?: string;
   demoURL?: string;
-}
-
-const handleOpenLink = (url?: string) => {
-  if(!!url) window.open(url, "_blank")
+  descriptionImages?: string[];
 }
 
 export default function ProjectCard(props: IProjectCard) {
+  const locale = useLocale() as Locale;
   const t = useTranslations('Index');
   const {
     projectName,
     imageURL,
     subTitle,
-    description,
+    description  = '',
     technologiesUsed = [],
     index = 0,
-    demoURL,
-    githubURL,
+    id,
   } = props;
   return (
     <div
@@ -56,14 +54,13 @@ export default function ProjectCard(props: IProjectCard) {
         <div className="self-stretch relative text-label-16px-bold text-neutral-300">
           {subTitle}
         </div>
-        <div className="self-stretch relative text-body-14px-regular text-neutral-500 text-ellipsis line-clamp-5">
-          
-          <ReadMore text={description} length={230}/>
+        <div className="self-stretch relative text-body-14px-regular text-neutral-500 text-ellipsis line-clamp-4">
+          {description}
         </div>
       </div>
       <div className="overflow-hidden flex flex-col items-start justify-start py-2 gap-[8px]">
-        <div className="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pl-0 gap-[8px] h-[76px]">
-          {technologiesUsed.map((item, index) => {
+        <div className="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pl-0 gap-[8px]">
+          {technologiesUsed.filter((i, index) => index < 3).map((item, index) => {
             return (
               <div
                 key={index}
@@ -73,41 +70,19 @@ export default function ProjectCard(props: IProjectCard) {
               </div>
             );
           })}
-          {/* <button className="cursor-pointer py-1.5 px-[15px] rounded-3xl box-border overflow-hidden flex flex-row items-center justify-center gap-[8px] bg-neutral-700">
+          {technologiesUsed.length > 3 && <div className="py-1.5 px-[15px] rounded-3xl box-border overflow-hidden flex flex-row items-center justify-center gap-[8px] bg-neutral-700">
             <div className="relative text-label-16px-regular text-neutral-white">
-              +3 more
+            +{technologiesUsed.length - 3} more
             </div>
-          </button> */}
+          </div>}
         </div>
         <div className="flex flex-row items-start justify-start py-2 gap-8">
-          {!!githubURL ? (
-            <button
+          <a
               className="text-neutral-100 text-label-16px-bold hover:text-neutral-300  flex flex-row gap-2"
-              onClick={() => handleOpenLink(githubURL)}
+              href={`/${locale}/projects/${id}`}
             >
-              {t("view")} Github <IoArrowForwardCircleOutline size={24} />
-            </button>
-          ) : (
-            <button
-              className="text-neutral-500 text-label-16px-bold cursor-not-allowed  flex flex-row gap-2"
-            >
-             {t("view")} Github <IoArrowForwardCircleOutline size={24} />
-            </button>
-          )}
-          {!!demoURL? (
-            <button
-              className="text-neutral-100 text-label-16px-bold hover:text-neutral-300  flex flex-row gap-2"
-              onClick={() => handleOpenLink(demoURL)}
-            >
-              Demo <IoArrowForwardCircleOutline size={24} />
-            </button>
-          ) : (
-            <button
-              className="text-neutral-500 text-label-16px-bold cursor-not-allowed flex flex-row gap-2"
-            >
-              Demo <IoArrowForwardCircleOutline size={24} />
-            </button>
-          )}
+              {t("viewProject")} <IoArrowForwardCircleOutline size={24} />
+            </a>
         </div>
       </div>
     </div>

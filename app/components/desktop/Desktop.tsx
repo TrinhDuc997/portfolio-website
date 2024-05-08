@@ -1,4 +1,4 @@
-import React, { MutableRefObject } from 'react'
+import React from 'react'
 import AboutMe from "../../components/desktop/AboutMe";
 import Footer from "../../components/desktop/Footer";
 import Heading from "../../components/desktop/Heading";

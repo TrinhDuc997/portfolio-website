@@ -6,7 +6,7 @@ import LanguageSwitcher from "../common/LanguageSwitcher";
 import { MdMailOutline } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { Popover } from "flowbite-react";
-import { AppContext } from "@/app/hooks/useIntersectionObsercer";
+import { AppContext } from "@/app/hooks/AppContext";
 
 const handleScroll = (elementName = "") => {
   const element = document.querySelector(elementName) as HTMLElement;

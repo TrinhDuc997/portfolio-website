@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Desktop from "../components/desktop/Desktop";
 import Mobile from "../components/mobiile/Mobile";
-import { AppContext } from "../hooks/useIntersectionObsercer";
+import { AppContext } from "../hooks/AppContext";
 
 function Home() {
   const [activeSection, setActiveSection] = useState('heading');

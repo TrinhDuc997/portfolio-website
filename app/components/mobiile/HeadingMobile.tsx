@@ -4,7 +4,7 @@ import { Navbar } from "flowbite-react";
 import { type Locale } from "@/i18n.config";
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "../common/LanguageSwitcher";
-import { AppContext } from "@/app/hooks/useIntersectionObsercer";
+import { AppContext } from "@/app/hooks/AppContext";
 
 const handleScroll = (elementName:string) => {
   const element = document.querySelector(elementName) as HTMLElement;
